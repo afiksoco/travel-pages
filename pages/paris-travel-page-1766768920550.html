@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paris Travel Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background:#f6f7fb; color:#111; }
+    header { padding: 32px 20px; background: #111; color: #fff; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+    .hero { display: grid; gap: 16px; grid-template-columns: 1fr; margin-top: 16px; }
+    .hero img { width: 100%; border-radius: 14px; object-fit: cover; }
+    .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .card { background: #fff; border-radius: 14px; padding: 14px; box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+    h1 { margin: 0 0 8px; }
+    h2 { margin: 28px 0 12px; }
+    p { line-height: 1.5; margin: 0; }
+    .map { border: 0; width: 100%; height: 380px; border-radius: 14px; box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+    .muted { opacity: .85; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Paris Travel Page</h1>
+      <p class="muted">Paris, the capital of France, is a city of breathtaking beauty and rich history. From the iconic Eiffel Tower to the world-class art museums, Paris has something for every kind of traveler. Whether you&#039;re interested in history, art, fashion, or food, Paris is a city that will leave you in awe. With its charming streets, picturesque canals, and vibrant culture, Paris is a must-visit destination for anyone who loves travel.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <img src="https://source.unsplash.com/featured/1200x800?Paris%20Travel%20Page" alt="image 1" />
+      <div class="grid">
+        <img src="https://source.unsplash.com/featured/1200x800?Eiffel%20Tower" alt="image 2" />
+        <img src="https://source.unsplash.com/featured/1200x800?Louvre%20Museum" alt="image 3" />
+      </div>
+    </section>
+
+    <h2>Top attractions</h2>
+    <section class="grid">
+      
+  <div class="card">
+    <h3>Eiffel Tower</h3>
+    <p>The Eiffel Tower is an iconic iron lattice tower that was built for the 1889 World&#039;s Fair. It stands at an impressive 324 meters tall and offers stunning views of the city from its observation decks.</p>
+  </div>
+
+
+  <div class="card">
+    <h3>Louvre Museum</h3>
+    <p>The Louvre Museum is one of the world&#039;s largest and most famous museums, housing an impressive collection of art and artifacts from around the world. The museum&#039;s collection includes the Mona Lisa, Venus de Milo, and many other famous works of art.</p>
+  </div>
+
+
+  <div class="card">
+    <h3>Notre Dame Cathedral</h3>
+    <p>Notre Dame Cathedral is a beautiful and historic Gothic cathedral that dates back to the 12th century. The cathedral was built on the site of a earlier church and features stunning stained glass windows, intricate carvings, and a beautiful rose window.</p>
+  </div>
+
+    </section>
+
+    <h2>Map</h2>
+    <iframe class="map" src="https://www.google.com/maps?q=48.8567%2C%202.2945&output=embed" loading="lazy"></iframe>
+  </main>
+</body>
+</html>
