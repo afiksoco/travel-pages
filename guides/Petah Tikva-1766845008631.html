@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>{{ $json.fields['City Name'] }} Travel Guide</title>
+  </head>
+  <body style="font-family: Arial; background-color: #f0f0f0;">
+    <header style="background-color: #007bff; color: #ffffff; padding: 20px; text-align: center;">
+      <h1>{{ $json.fields['City Name'] }} Travel Guide</h1>
+    </header>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+      <img src="https://image.pollinations.ai/prompt/cityscape-of-{{ $json.fields['City Name'] }}" style="width: 30%; margin: 10px;" alt="Cityscape of {{ $json.fields['City Name'] }}">
+      <img src="https://image.pollinations.ai/prompt/landmark-in-{{ $json.fields['City Name'] }}" style="width: 30%; margin: 10px;" alt="Landmark in {{ $json.fields['City Name'] }}">
+      <img src="https://image.pollinations.ai/prompt/nature-in-{{ $json.fields['City Name'] }}" style="width: 30%; margin: 10px;" alt="Nature in {{ $json.fields['City Name'] }}">
+    </div>
+    <h2 style="text-align: center; margin-top: 20px;">Top 5 Attractions</h2>
+    <ul style="list-style: none; padding: 0; margin: 0;">
+      <li style="background-color: #ffffff; padding: 20px; margin-bottom: 10px; border: 1px solid #dddddd;">
+        <h3>Attraction 1</h3>
+        <p>This is a must-visit attraction in {{ $json.fields['City Name'] }}. It offers a unique experience that you will never forget.</p>
+      </li>
+      <li style="background-color: #ffffff; padding: 20px; margin-bottom: 10px; border: 1px solid #dddddd;">
+        <h3>Attraction 2</h3>
+        <p>This attraction is a great place to learn about the history and culture of {{ $json.fields['City Name'] }}.</p>
+      </li>
+      <li style="background-color: #ffffff; padding: 20px; margin-bottom: 10px; border: 1px solid #dddddd;">
+        <h3>Attraction 3</h3>
+        <p>If you are looking for some adventure, this attraction is the perfect place to visit in {{ $json.fields['City Name'] }}.</p>
+      </li>
+      <li style="background-color: #ffffff; padding: 20px; margin-bottom: 10px; border: 1px solid #dddddd;">
+        <h3>Attraction 4</h3>
+        <p>This attraction is a great place to relax and unwind in {{ $json.fields['City Name'] }}.</p>
+      </li>
+      <li style="background-color: #ffffff; padding: 20px; margin-bottom: 10px; border: 1px solid #dddddd;">
+        <h3>Attraction 5</h3>
+        <p>This attraction is a must-visit for foodies in {{ $json.fields['City Name'] }}. It offers a wide range of delicious cuisine.</p>
+      </li>
+    </ul>
+    <div style="width: 100%; height: 500px; margin-top: 20px;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3151.838356878787!2d-122.084051!3d37.385348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1643723358350!5m2!1sen!2sus" style="width: 100%; height: 100%; border: none;" allowfullscreen></iframe>
+    </div>
+  </body>
+</html>
