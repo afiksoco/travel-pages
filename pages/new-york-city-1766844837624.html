@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New York City</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background:#f6f7fb; color:#111; }
+    header { padding: 32px 20px; background: #111; color: #fff; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+    .hero { display: grid; gap: 16px; grid-template-columns: 1fr; margin-top: 16px; }
+    .hero img { width: 100%; border-radius: 14px; object-fit: cover; }
+    .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    .card { background: #fff; border-radius: 14px; padding: 14px; box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+    h1 { margin: 0 0 8px; }
+    h2 { margin: 28px 0 12px; }
+    p { line-height: 1.5; margin: 0; }
+    .map { border: 0; width: 100%; height: 380px; border-radius: 14px; box-shadow: 0 6px 18px rgba(0,0,0,.08); }
+    .muted { opacity: .85; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>New York City</h1>
+      <p class="muted">New York City is a bustling metropolis known for its iconic skyline, world-class museums, and diverse neighborhoods. From the bright lights of Times Square to the peaceful greenery of Central Park, NYC has something for everyone. Whether you&#039;re interested in history, art, food, or entertainment, NYC is a city that never sleeps.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <img src="https://source.unsplash.com/featured/1200x800?New%20York%20City" alt="image 1" />
+      <div class="grid">
+        <img src="https://source.unsplash.com/featured/1200x800?Statue%20of%20Liberty" alt="image 2" />
+        <img src="https://source.unsplash.com/featured/1200x800?Central%20Park" alt="image 3" />
+      </div>
+    </section>
+
+    <h2>Top attractions</h2>
+    <section class="grid">
+      
+  <div class="card">
+    <h3>Statue of Liberty</h3>
+    <p>Take a ferry to Liberty Island to see the iconic Statue of Liberty up close. Learn about its history and significance at the museum on the island.</p>
+  </div>
+
+
+  <div class="card">
+    <h3>Central Park</h3>
+    <p>Escape the hustle and bustle of the city with a stroll through Central Park. Rent a bike, have a picnic, or attend a concert or festival.</p>
+  </div>
+
+
+  <div class="card">
+    <h3>The Metropolitan Museum of Art</h3>
+    <p>One of the world&#039;s largest and most famous museums, the Met features a vast collection of art and artifacts from around the world. From ancient Egyptian temples to modern masterpieces, there&#039;s something for every interest.</p>
+  </div>
+
+    </section>
+
+    <h2>Map</h2>
+    <iframe class="map" src="https://www.google.com/maps?q=40.7128%2C-74.0060&output=embed" loading="lazy"></iframe>
+  </main>
+</body>
+</html>
