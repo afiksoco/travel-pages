@@ -1,0 +1,30 @@
+<h1 style="color: #0099ff; text-align: center; font-size: 36px;">{{ $json.fields['City Name'] }}</h1>
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+  <img src="https://image.pollinations.ai/prompt/sunset_over_{{ $json.fields['City Name'] }}_skyline" alt="{{ $json.fields['City Name'] }} Sunset" style="width: 30%; margin: 10px;">
+  <img src="https://image.pollinations.ai/prompt/nighttime_{{ $json.fields['City Name'] }}_streets" alt="{{ $json.fields['City Name'] }} Nightlife" style="width: 30%; margin: 10px;">
+  <img src="https://image.pollinations.ai/prompt/morning_in_{{ $json.fields['City Name'] }}_park" alt="{{ $json.fields['City Name'] }} Morning" style="width: 30%; margin: 10px;">
+</div>
+<h2 style="color: #666; text-align: center; font-size: 24px;">Top 5 Attractions in {{ $json.fields['City Name'] }}</h2>
+<ol style="list-style: none; padding: 0; margin: 0;">
+  <li style="margin: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 10px; width: 80%; margin: 0 auto;">
+    <h3 style="font-size: 18px; margin-top: 0;">The Eiffel Tower</h3>
+    <p>The iconic symbol of {{ $json.fields['City Name'] }}, the Eiffel Tower is a must-visit attraction.</p>
+  </li>
+  <li style="margin: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 10px; width: 80%; margin: 0 auto;">
+    <h3 style="font-size: 18px; margin-top: 0;">The Louvre Museum</h3>
+    <p>One of the world's largest and most famous museums, the Louvre is home to an impressive collection of art and artifacts.</p>
+  </li>
+  <li style="margin: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 10px; width: 80%; margin: 0 auto;">
+    <h3 style="font-size: 18px; margin-top: 0;">Notre-Dame Cathedral</h3>
+    <p>A beautiful and historic cathedral that has been a symbol of {{ $json.fields['City Name'] }} for centuries.</p>
+  </li>
+  <li style="margin: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 10px; width: 80%; margin: 0 auto;">
+    <h3 style="font-size: 18px; margin-top: 0;">Arc de Triomphe</h3>
+    <p>A monumental arch that honors the soldiers who fought and died for {{ $json.fields['City Name'] }}.</p>
+  </li>
+  <li style="margin: 10px; padding: 10px; border: 1px solid #ddd; border-radius: 10px; width: 80%; margin: 0 auto;">
+    <h3 style="font-size: 18px; margin-top: 0;">Palace of Versailles</h3>
+    <p>A stunning royal palace with beautiful gardens and fountains, located just outside of {{ $json.fields['City Name'] }}.</p>
+  </li>
+</ol>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73937.17819542974!2d2.294481315796369!3d48.858370379328524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2s{{ $json.fields['City Name'] }}%2C%20France!5e0!3m2!1sen!2s!4v1669093956549!5m2!1sen!2s" width="80%" height="450" style="border: 1px solid #ddd; border-radius: 10px; margin: 20px auto;" allowfullscreen></iframe>
