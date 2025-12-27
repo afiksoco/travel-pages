@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>{{ $json.fields['City Name'] }} Travel Guide</title>
+</head>
+<body style="font-family: Arial; background-color: #f0f0f0;">
+
+<h1 style="color: #00698f; text-align: center; padding: 20px; background-color: #ffffff;">Welcome to {{ $json.fields['City Name'] }}</h1>
+
+<p style="text-align: center; padding: 10px;">{{ $json.fields['City Name'] }} is a beautiful city with a rich history and culture. Here are some of the top attractions to visit:</p>
+
+<img src="https://image.pollinations.ai/prompt/{{ $json.fields['City Name'] }}-landmark-photo" style="width: 30%; height: 200px; margin: 10px; float: left;">
+<img src="https://image.pollinations.ai/prompt/{{ $json.fields['City Name'] }}-cityscape-photo" style="width: 30%; height: 200px; margin: 10px; float: left;">
+<img src="https://image.pollinations.ai/prompt/{{ $json.fields['City Name'] }}-nature-photo" style="width: 30%; height: 200px; margin: 10px; float: left;">
+
+<h2 style="clear: both; color: #008000; padding: 10px;">Top 5 Attractions</h2>
+
+<ol style="list-style: none; padding: 0; margin: 0;">
+  <li style="padding: 10px; background-color: #ffffff; margin-bottom: 10px; border: 1px solid #ddd;">
+    <h3>The Eiffel Tower</h3>
+    <p>The Eiffel Tower is an iconic landmark in {{ $json.fields['City Name'] }}. It offers stunning views of the city and is a must-visit attraction.</p>
+  </li>
+  <li style="padding: 10px; background-color: #ffffff; margin-bottom: 10px; border: 1px solid #ddd;">
+    <h3>The Louvre Museum</h3>
+    <p>The Louvre Museum is one of the largest and most famous museums in the world. It houses an impressive collection of art and artifacts from around the globe.</p>
+  </li>
+  <li style="padding: 10px; background-color: #ffffff; margin-bottom: 10px; border: 1px solid #ddd;">
+    <h3>The Notre-Dame Cathedral</h3>
+    <p>The Notre-Dame Cathedral is a beautiful and historic church in {{ $json.fields['City Name'] }}. It is known for its stunning architecture and rich history.</p>
+  </li>
+  <li style="padding: 10px; background-color: #ffffff; margin-bottom: 10px; border: 1px solid #ddd;">
+    <h3>The Arc de Triomphe</h3>
+    <p>The Arc de Triomphe is a monumental arch in {{ $json.fields['City Name'] }}. It honors the soldiers who fought and died for France and offers stunning views of the city.</p>
+  </li>
+  <li style="padding: 10px; background-color: #ffffff; margin-bottom: 10px; border: 1px solid #ddd;">
+    <h3>The Montmartre Neighborhood</h3>
+    <p>The Montmartre Neighborhood is a charming and historic area in {{ $json.fields['City Name'] }}. It is known for its narrow streets, charming cafes, and stunning views of the city.</p>
+  </li>
+</ol>
+
+<h2 style="color: #008000; padding: 10px;">Get Around {{ $json.fields['City Name'] }}</h2>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.594908526435!2d2.294481315932542!3d48.85837097932614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee3804867!2sEiffel+Tower%2C+Paris%2C+France!5e0!3m2!1sen!2sus!4v1662014353611!5m2!1sen!2sus" style="width: 100%; height: 400px; border: none;"></iframe>
+
+<p style="text-align: center; padding: 10px;">We hope you enjoy your trip to {{ $json.fields['City Name'] }}!</p>
+
+</body>
+</html>
