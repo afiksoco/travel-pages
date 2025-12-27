@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+body {font-family: Arial; background-color: #f0f0f0;}
+.header {background-color: #007bff; color: #ffffff; padding: 20px; text-align: center;}
+.attractions {padding: 20px;}
+.attraction {background-color: #ffffff; padding: 10px; margin-bottom: 10px; border: 1px solid #dddddd; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+img {width: 100%; height: 200px; object-fit: cover; border-radius: 5px;}
+</style>
+</head>
+<body>
+<div class="header" style="font-size: 36px;">{{ $json.fields['City Name'] }}</div>
+<img src="https://image.pollinations.ai/prompt/sunset-over-the-city-of-{{ strtolower($json.fields['City Name']) }}" style="width: 100%; height: 300px; object-fit: cover; border-radius: 5px;">
+<div class="attractions">
+<h2 style="color: #007bff;">Top 5 Attractions</h2>
+<div class="attraction">
+<h3>Attraction 1: City Museum</h3>
+<img src="https://image.pollinations.ai/prompt/museum-in-{{ strtolower($json.fields['City Name']) }}">
+<p>The City Museum is a must-visit attraction in {{ $json.fields['City Name'] }}. With a collection of over 10,000 artifacts, it showcases the city's rich history and culture.</p>
+</div>
+<div class="attraction">
+<h3>Attraction 2: City Park</h3>
+<img src="https://image.pollinations.ai/prompt/park-in-{{ strtolower($json.fields['City Name']) }}">
+<p>The City Park is a beautiful green space in the heart of {{ $json.fields['City Name'] }}. It features walking trails, gardens, and a lake, making it a perfect spot for relaxation and recreation.</p>
+</div>
+<div class="attraction">
+<h3>Attraction 3: Historic Landmark</h3>
+<img src="https://image.pollinations.ai/prompt/historic-landmark-in-{{ strtolower($json.fields['City Name']) }}">
+<p>The Historic Landmark is a iconic symbol of {{ $json.fields['City Name'] }}. Built in the 19th century, it offers stunning views of the city and is a great spot for photography.</p>
+</div>
+<div class="attraction">
+<h3>Attraction 4: Local Market</h3>
+<img src="https://image.pollinations.ai/prompt/market-in-{{ strtolower($json.fields['City Name']) }}">
+<p>The Local Market is a vibrant and bustling marketplace in {{ $json.fields['City Name'] }}. It offers a wide range of local products, including fresh produce, handicrafts, and souvenirs.</p>
+</div>
+<div class="attraction">
+<h3>Attraction 5: Waterfront</h3>
+<img src="https://image.pollinations.ai/prompt/waterfront-in-{{ strtolower($json.fields['City Name']) }}">
+<p>The Waterfront is a stunning coastal area in {{ $json.fields['City Name'] }}. It features beautiful beaches, restaurants, and bars, making it a perfect spot for entertainment and leisure.</p>
+</div>
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8383560004175!2d-122.08405108456976!3d37.3853480795705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad6b%3A0xb9ab9351e2c36f9!2sCity+Hall!5e0!3m2!1sen!2sus!4v1549270803960!5m2!1sen!2sus" width="100%" height="400" frameborder="0" style="border: 0;" allowfullscreen=""></iframe>
+</body>
+</html>
